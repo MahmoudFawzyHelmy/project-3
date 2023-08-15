@@ -1,0 +1,176 @@
+/* start global Rules */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global rules */
+
+/* start combonants */
+@media (max-width: 992px) {
+  .special-heading h2 {
+    font-size: 70px;
+  }
+  .special-heading p {
+    font-size: 25px;
+  }
+}
+/* end combonants */
+
+/* start nav  */
+@media (min-width: 768px) {
+  .nav .links .toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .nav .links ul {
+    display: none;
+  }
+  .nav .links .toggle:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 10px);
+    width: 100%;
+    left: 0;
+    background-color: #000;
+    z-index: 1;
+  }
+  .nav .links ul li {
+    padding: 20px 10px;
+    text-align: right;
+  }
+}
+/* end nav  */
+/* start header */
+@media (max-width: 768px) {
+  .home .container .home-info p,
+  .home .container .home-info h1 {
+    font-size: 25px;
+  }
+  .home .container .home-info span {
+    font-size: 18px;
+  }
+}
+/* end header */
+/* start about */
+@media (max-width: 992px) {
+  .about .container .about-content {
+    flex-direction: column;
+  }
+  .about .container .about-info {
+    text-align: center;
+    padding: 20px;
+  }
+  .about .container .about-contact {
+    margin-top: 30px;
+  }
+  .about .container .about-footer .box {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .about .container .about-footer .box:not(:last-of-type)::after {
+    display: none;
+  }
+}
+
+/* end about */
+
+/* start services section */
+@media (max-width: 992px) {
+  .services .container .services-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .services .container .col .box {
+    flex-direction: column;
+  }
+  .services .container .col .box i {
+    margin-bottom: 20px;
+  }
+}
+/* end services section */
+
+/* start resume section */
+@media (max-width: 992px) {
+  .resume .services-box {
+    flex-direction: column;
+  }
+  .resume .container .skills .skill-holder {
+    flex-direction: column;
+  }
+}
+
+/* end resume section */
+
+/* start portfolio section */
+@media (max-width: 992px) {
+  .portfolio .portfolio-box {
+    flex-direction: column;
+  }
+  .portfolio .portfolio-box .box {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio .portfolio-box .box .img .info p {
+    font-size: 18px;
+  }
+  .portfolio .portfolio-box .box .img .info span {
+    font-size: unset;
+  }
+}
+/* end portfolio section */
+
+/* start client section */
+@media (max-width: 768px) {
+  .client .client-box .box:last-of-type {
+    display: none;
+  }
+}
+/* end client section */
+
+/* start contact section */
+@media (max-width: 768px) {
+  .contact .contact-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact .contact-box .form {
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .contact .contact-box .address {
+    order: 2;
+  }
+}
+/* end contact section */
+
+/* start footer section */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  .footer .container .right {
+    margin-bottom: 20px;
+  }
+}
+/* end footer section */
